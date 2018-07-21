@@ -1,0 +1,37 @@
+= Friday Stats
+
+image:https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg[gitmoji,link=https://gitmoji.carloscuesta.me]
+
+*Create statistics about Fridays*
+
+_Copyright (C) Marcus Fihlon_
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with this program. If not, see http://www.gnu.org/licenses/[http://www.gnu.org/licenses/].
+
+== Run
+
+You need to have Java 10 or newer installed on your machine. After cloning this repository you can start the analyzing process by calling the _run_ task of the included _gradle_ build system:
+
+```
+git clone https://github.com/McPringle/friday.git
+cd friday
+./gradlew run
+```
+
+== Output
+
+This program will analyze all Fridays between the year 1 and 3000. The output will show you the day of the month and the how often this day was a Friday. The output should look like this:
+
+```
+{1=5150, 2=5138, 3=5133, 4=5152, 5=5128, 6=5159, 7=5128, 8=5150, 9=5138, 10=5133, 11=5152, 12=5128, 13=5159, 14=5128, 15=5150, 16=5138, 17=5133, 18=5152, 19=5128, 20=5159, 21=5128, 22=5150, 23=5138, 24=5133, 25=5152, 26=5128, 27=5159, 28=5128, 29=4820, 30=4718, 31=2990}
+```
+
+If you want to analyze a different period of time, feel free to modify the source.
+
+== Why
+
+Just for fun! I read https://www.juengling-edv.de/freitag-der-dreizehnte/[this article] from one of my friends and decided to code a little program for absolutely no reason… :-)
